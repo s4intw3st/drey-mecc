@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão de Amor</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarAmor()">Clique aqui!</button>
+  <div id="mensagem"></div>
+  <script>
+    function mostrarAmor() {
+      var mensagemDiv = document.getElementById('mensagem');
+      mensagemDiv.textContent = 'Eu te amo!';
+    }
+  </script>
+</body>
+</html>
